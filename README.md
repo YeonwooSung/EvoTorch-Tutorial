@@ -10,6 +10,8 @@ pip install evotorch
 
 ## Usage
 
+For general usage of v0.2.0, please refer [this link](https://docs.evotorch.ai/v0.2.0/user_guide/general_usage/).
+
 ### Basic Usage
 
 ```python
