@@ -8,6 +8,43 @@ Example codes & tutorials for EvoTorch, a library for evolutionary algorithms fo
 pip install evotorch
 ```
 
+### Requirements
+
+- Python 3.6+
+- PyTorch 1.1+
+- evotorch
+
+**1. MNIST**
+
+For the MNIST example, you will also need to install torchvision.
+
+**2. Reinforcement Learning**
+
+For the RL example, you will also need to install gym. Also, box2d, mujoco, and pygame should be installed.
+To install the box2d, you need to install the swig first. On Ubuntu, you can install it by running:
+
+```bash
+sudo apt-get install swig
+```
+
+On macOS, you can install it by running:
+
+```bash
+brew install swig
+```
+
+After install the swig, you can install the box2d by running:
+
+```bash
+pip3 install box2d-py
+```
+
+If you still gets some unexpected errors due to the box2d, this might fix it:
+
+```bash
+pip3 install box2d box2d-kengz
+```
+
 ## Usage
 
 For general usage of v0.2.0, please refer [this link](https://docs.evotorch.ai/v0.2.0/user_guide/general_usage/).
@@ -48,4 +85,8 @@ def main():
 
 2. [Multiple Objectives](./example/multiple_objectives.py)
 
-3. [Paralleized Reinforcement Learning](./example/parallelized_rl.py)
+3. Reinforcement Learning with Evolutionary Algorithms
+    - [Paralleized Reinforcement Learning](./example/rl/humanoid_v4_linear.py)
+    - [LunarLanderContinuous-v2](./example/rl/lunarlander_continuous_v2.py)
+
+4. [Train MNIST with SNES](./example/mnist_example.py)
