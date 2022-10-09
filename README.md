@@ -2,6 +2,8 @@
 
 Example codes & tutorials for EvoTorch, a library for evolutionary algorithms for PyTorch
 
+[Quick Start](https://docs.evotorch.ai/v0.2.0/quickstart/)
+
 ## Installation
 
 ```bash
@@ -90,3 +92,7 @@ def main():
     - [LunarLanderContinuous-v2](./example/rl/lunarlander_continuous_v2.py)
 
 4. [Train MNIST with SNES](./example/mnist_example.py)
+
+5. [Variational Quantum Eigensolvers with SNES](./example/variational_quantum_eigensolver/)
+    - [VQE solver for H2](./example/variational_quantum_eigensolver/vqs_h2.py)
+    - [VQE solver for H2O](./example/variational_quantum_eigensolver/vqs_h2o.py)
